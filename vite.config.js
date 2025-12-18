@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  // config options
-  base: "/",
+  base: "/ko-dany.github.io-ci-cd-pipeline-workshop/",
 });
