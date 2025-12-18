@@ -1,13 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
+    <title>CI/CD Todo Workshop</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header>
+        <h1>📝 CI/CD Todo App</h1>
+        <p class="subtitle">Learn CI/CD with a real-world example</p>
+      </header>
+
+      <main class="container">
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="What needs to be done?"
+            autocomplete="off"
+          />
+          <button type="submit">Add</button>
+        </form>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+
+        <div id="stats" class="stats"></div>
+      </main>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
